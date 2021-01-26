@@ -5,6 +5,7 @@ import Landing from './components/layout/Landing';
 import Routes from './components/routing/Routes';
 import { LOGOUT } from './actions/types';
 
+import ReactGA from 'react-ga';
 // Redux
 import { Provider } from 'react-redux';
 import store from './store';
