@@ -14,9 +14,6 @@ import setAuthToken from './utils/setAuthToken';
 
 import './App.css';
 
-ReactGA.initialize('260089586');
-ReactGA.pageview(window.location.pathname + window.location.search);
-
 
 const App = () => {
   useEffect(() => {
