@@ -322,10 +322,6 @@ button {
   margin: 0 0.25rem;
 }
 
-.navbar a:hover {
-  color: var(--primary-color);
-}
-
 .navbar .welcome span {
   margin-right: 0.6rem;
 }
@@ -387,10 +383,6 @@ button {
 .profile-top .icons a {
   color: #fff;
   margin: 0 0.3rem;
-}
-
-.profile-top .icons a:hover {
-  color: var(--dark-color);
 }
 
 .profile-about {

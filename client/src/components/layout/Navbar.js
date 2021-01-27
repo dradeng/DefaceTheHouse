@@ -8,25 +8,7 @@ import { logout } from '../../actions/auth';
 import logo from '../../img/wreck.png';
 
 const Navbar = ({ auth: { isAuthenticated }, logout }) => {
-  const sportsOptions = [
-    { value: 'NFL', label: 'NFL' },
-    { value: 'NCAAF', label: 'NCAAF' },
-    { value: 'NBA', label: 'NBA' },
-    { value: 'MLB', label: 'MLB' },
-    { value: 'NHL', label: 'NHL' },
-  ];
-  const picksOptions = [
-    { value: 'NFL', label: 'NFL' },
-    { value: 'NCAAF', label: 'NCAAF' },
-    { value: 'NBA', label: 'NBA' },
-    { value: 'MLB', label: 'MLB' },
-    { value: 'NHL', label: 'NHL' },
-  ]
-  const bettingOptions = [
-    { value: 'BettingSitesByRegion', label: 'Betting Sites By Region' },
-    { value: 'BettingSitesBySport', label: 'BettingSites By Sport' },
-    { value: 'OnlineSportsbook', label: 'Online Sportsbook' },
-  ];
+
   const [formData, setFormData] = useState({
     showPicks: false,
     showBetting: false,
@@ -74,10 +56,10 @@ const Navbar = ({ auth: { isAuthenticated }, logout }) => {
   }
   
   const links = (
-    <ul style={{verticalAlign: 'middle'}}>
+    <ul style={{verticalAlign: 'middle', marginRight: '100px'}}>
       <li style={{ width: '100px'}}>
         <div style={{height: '1px',}}>
-          <div onClick={() => changeSports()}>SPORTS</div>
+          <Link style={{fontWeight: '700'}} onClick={() => changeSports()}>SPORTS</Link>
           <div style={{display: showSports ? 'inline-block' : 'none', visible: 'auto', fontWeight: '700', backgroundColor: '#F7F6F4', color: '#000000', borderRadius: '15px'}}>
             <Link onClick={() => closeDropdowns()} to="/nfl" style={{ margin: '20px', display: 'block', color: '#000000'}}>NFL</Link>
             <Link onClick={() => closeDropdowns()} to="/ncaaf" style={{ margin: '20px', display: 'block', color: '#000000'}}>NCAAF</Link>
@@ -89,7 +71,7 @@ const Navbar = ({ auth: { isAuthenticated }, logout }) => {
       </li>
       <li style={{ width: '100px'}}>
         <div style={{height: '1px',}}>
-          <div onClick={() => changePicks()}>PICKS</div>
+          <Link style={{fontWeight: '700'}} onClick={() => changePicks()}>PICKS</Link>
           <div style={{display: showPicks ? 'inline-block' : 'none', visible: 'auto', fontWeight: '700', backgroundColor: '#F7F6F4', color: '#000000', borderRadius: '15px'}}>
             <Link onClick={() => closeDropdowns()} to="/nfl" style={{ margin: '20px', display: 'block', color: '#000000'}}>NFL</Link>
             <Link onClick={() => closeDropdowns()} to="/ncaaf" style={{ margin: '20px', display: 'block', color: '#000000'}}>NCAAF</Link>
@@ -101,13 +83,11 @@ const Navbar = ({ auth: { isAuthenticated }, logout }) => {
       </li>
       <li style={{ width: '100px'}}>
         <div style={{height: '1px',}}>
-          <div onClick={() => changeBetting()}>BETTING</div>
-          <div style={{display: showBetting ? 'inline-block' : 'none', visible: 'auto', fontWeight: '700', backgroundColor: '#F7F6F4', color: '#000000', borderRadius: '15px'}}>
-            <Link onClick={() => closeDropdowns()} to="/" style={{ margin: '20px', display: 'block', color: '#000000'}}>NFL</Link>
-            <Link onClick={() => closeDropdowns()} to="/" style={{ margin: '20px', display: 'block', color: '#000000'}}>NCAAF</Link>
-            <Link onClick={() => closeDropdowns()} to="/" style={{ margin: '20px', display: 'block', color: '#000000'}}>NBA</Link>
-            <Link onClick={() => closeDropdowns()} to="/" style={{ margin: '20px', display: 'block', color: '#000000'}}>MLB</Link>
-            <Link onClick={() => closeDropdowns()} to="/" style={{ margin: '20px', display: 'block', color: '#000000'}}>NHL</Link>
+          <Link style={{fontWeight: '700'}} onClick={() => changeBetting()}>BETTING</Link>
+          <div style={{display: showBetting ? 'inline-block' : 'none', visible: 'auto', width: '200px',fontWeight: '700', backgroundColor: '#F7F6F4', color: '#000000', borderRadius: '15px'}}>
+            <Link onClick={() => closeDropdowns()} to="/" style={{ margin: '20px', display: 'block', color: '#000000'}}>Betting Sites By Region</Link>
+            <Link onClick={() => closeDropdowns()} to="/" style={{ margin: '20px', display: 'block', color: '#000000'}}>Betting Sites By Sport</Link>
+            <Link onClick={() => closeDropdowns()} to="/" style={{ margin: '20px', display: 'block', color: '#000000'}}>Online Sportsbook</Link>
           </div>
         </div>
       </li>

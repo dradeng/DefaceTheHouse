@@ -10,7 +10,7 @@ const Landing = ({ isAuthenticated }) => {
 
   return (
     <section className='landing'>
-      <div className='dark-overlay'>
+      <div className=''>
         <div className='landing-inner'>
         
           
