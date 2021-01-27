@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Navbar from './components/layout/Navbar';
 import Footer from './components/layout/Footer';
 import Landing from './components/layout/Landing';
+import SuperBowl from './components/picks/nfl/2020/KC_TB_2_7_2020';
 import Routes from './components/routing/Routes';
 import { LOGOUT } from './actions/types';
 
@@ -36,7 +37,7 @@ const App = () => {
         <Fragment>
           <Navbar />
           <Switch>
-            <Route exact path="/" component={Landing} />
+            <Route exact path="/" component={SuperBowl} />
             <Route component={Routes} />
           </Switch>
           <Footer />
