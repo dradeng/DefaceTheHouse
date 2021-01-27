@@ -37,7 +37,6 @@ const App = () => {
         <Fragment>
           <Navbar />
           <Switch>
-            <Route exact path="/" component={SuperBowl} />
             <Route component={Routes} />
           </Switch>
           <Footer />

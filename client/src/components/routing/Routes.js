@@ -23,7 +23,7 @@ const Routes = props => {
         <Route exact path="/nba" component={NBAHome} />
         <Route exact path="/nhl" component={NHLHome} />
         <Route exact path="/about-us" component={AboutUs} />
-
+        <Route exact path="/" component={SuperBowl}/>
         <Route component={NotFound} />
       </Switch>
     </section>
