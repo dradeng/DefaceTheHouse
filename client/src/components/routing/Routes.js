@@ -9,6 +9,7 @@ import NCAAFHome from '../picks/ncaaf/NCAAFHome';
 import MLBHome from '../picks/mlb/MLBHome';
 import NHLHome from '../picks/nhl/NHLHome';
 import NBAHome from '../picks/nba/NBAHome';
+import AboutUs from '../layout/AboutUs';
 
 
 const Routes = props => {
@@ -21,6 +22,7 @@ const Routes = props => {
         <Route exact path="/mlb" component={MLBHome} />
         <Route exact path="/nba" component={NBAHome} />
         <Route exact path="/nhl" component={NHLHome} />
+        <Route exact path="/about-us" component={AboutUs} />
 
         <Route component={NotFound} />
       </Switch>

@@ -95,7 +95,7 @@ const Navbar = ({ auth: { isAuthenticated }, logout }) => {
   );
 
   return (
-    <nav className="navbar bg-dark" style={{height: '100px', backgroundColor: '#00BFFF'}}>
+    <nav className="navbar bg-dark" style={{height: '100px', backgroundColor: '#A8A8A8'}}>
       <h1>
         <Link to="/">
           <img

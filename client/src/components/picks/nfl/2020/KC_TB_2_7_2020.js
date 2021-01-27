@@ -26,7 +26,7 @@ const KC_TB_2_7_2020 = () => {
         Kansas City Chiefs vs Tampa Bay Buccaneers
       </div>
 	  	<div>
-	      <div style={{display: 'inline-block', width: '300px'}}>
+	      <div style={{display: 'inline-block', width: '300px', verticalAlign: 'top'}}>
 	      	<div style={{fontSize: '24px', fontWeight: '700'}}>Kansas City Chiefs</div>
 	      	<div style={{fontSize: '24px', fontWeight: '700'}}>9-1 (6-4) ATS</div>
 	      </div>
@@ -34,16 +34,29 @@ const KC_TB_2_7_2020 = () => {
 	      	<div>February 07, 2021, 6:30 PM ET</div>
 	      	<div>Raymond James Stadium</div>
 	      	<div>Computer Model Predicted Score</div>
-	      	<div style={{marginTop: '40px'}}>
-	      		<div style={{display: 'inline-block', float: 'left', fontSize: '24px', fontWeight: '700'}} >28.5</div>
-	      		<div style={{display: 'inline-block', float: 'right', fontSize: '24px', fontWeight: '700'}} >20.9</div>
+	      	<div style={{marginTop: '40px', height: '100px'}}>
+	      		<div style={{display: 'inline-block', float: 'left', fontSize: '40px', fontWeight: '700'}} >28.5</div>
+	      		<div style={{display: 'inline-block', float: 'right', fontSize: '40px', fontWeight: '700'}} >20.9</div>
 	      	</div>
 	      </div>
-	      <div style={{display: 'inline-block', width: '300px'}}>
+	      <div style={{display: 'inline-block', width: '300px', verticalAlign: 'top'}}>
 	      	<div style={{fontSize: '24px', fontWeight: '700'}}>Tampa Bay Buccaneers</div>
 	      	<div style={{fontSize: '24px', fontWeight: '700'}}>7-4 (5-6) ATS</div>
 	      </div>
 	    </div>
+	    <div style={{marginTop: '0px', fontSize: '20px', width: '400px', margin: 'auto'}}>
+    		<div style={{fontSize: '24px', fontWeight: '700'}}>
+    			Model Record
+    		</div>
+    		<div style={{height: '100px', paddingTop: '20px'}}>
+    			<div style={{float:'left'}}>
+    				Spread Record: 7-4
+    			</div>
+    			<div style={{float:'right'}}>
+    				O/U Record: 6-5
+    			</div>
+    		</div>
+    	</div>
 	    <div style={{display: 'inline-block'}}>
 	    	<div style={{width: '280px', margin: '0px 40px'}}>
 	  			<div style={{fontSize: '24px', fontWeight: '700', marginBottom: '20px'}}>Spread Consensus 3.5</div>
