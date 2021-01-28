@@ -45,12 +45,21 @@ img {
 }
 
 @media(min-width: 640px) {
-  .leftScorePanel, .middleScorePanel, .rightScorePanel {
-    font-size: 60px;
-
+  .leftScorePanel, .rightScorePanel {
+    font-size: 24px;
+    display: inline-block;
+    width: 300px;
+  }
+  .middleScorePanel {
+    font-size: 16px;
+    display: inline-block;
+    width: 300px;
   }
   .mobileMiddleScorePanel {
     display: none;
+  }
+  .predictedScore {
+    font-size: 40px;
   }
 
 }
