@@ -44,6 +44,17 @@ img {
   margin-bottom: 3rem;
 }
 
+@media(min-width: 640px) {
+  .leftScorePanel, .middleScorePanel, .rightScorePanel {
+    font-size: 60px;
+
+  }
+  .mobileMiddleScorePanel {
+    display: none;
+  }
+
+}
+
 /* Text Styles*/
 .x-large {
   font-size: 4rem;

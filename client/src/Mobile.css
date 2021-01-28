@@ -1,0 +1,21 @@
+@media(max-width: 640px) {
+	.leftScorePanel, .rightScorePanel {
+		font-size: 12px;
+		width: 150px;
+
+	}
+	.mobileMiddleScorePanel {
+		font-size: 12px;
+	}
+	.predictedScore {
+		font-size: 24px;
+
+	}
+	.text {
+		font-size: 12px;
+	}
+	.middleScorePanel {
+		display: none;
+	}
+
+}

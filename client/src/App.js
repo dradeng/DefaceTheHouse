@@ -16,6 +16,8 @@ import setAuthToken from './utils/setAuthToken';
 
 import './App.css';
 
+import './Mobile.css';
+
 
 const App = () => {
   useEffect(() => {
