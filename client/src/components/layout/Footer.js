@@ -15,11 +15,11 @@ const Footer = ({ }) => {
     <div style={{textAlign: 'center', backgroundColor: '#A8A8A8', padding: '20px', color: 'white', fontWeight: '700'}}>
       <div>
         <div style={{ width: '200px', display: 'inline-block'}}>
-          <div style={{margin: '20px', display: 'block', color: 'inherit'}}>Top Sportsbooks</div>
-          <div style={{margin: '20px', display: 'block', color: 'inherit'}}>Sportsbook Reviews</div>
+          <Link to='top-sportsbooks' style={{margin: '20px', display: 'block', color: 'inherit'}}>Top Sportsbooks</Link>
+          <Link to='sportsbook-reviews' style={{margin: '20px', display: 'block', color: 'inherit'}}>Sportsbook Reviews</Link>
         </div>
         <div style={{ width: '200px', display: 'inline-block'}}>
-          <Link style={{margin: '20px', display: 'block', color: 'inherit'}}>Computer Model</Link>
+          <Link to='computer-model' style={{margin: '20px', display: 'block', color: 'inherit'}}>Computer Model</Link>
           <Link to='about-us' style={{margin: '20px', display: 'block', color: 'inherit'}}>About Us</Link>
         </div>
       </div>
