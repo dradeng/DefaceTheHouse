@@ -10,7 +10,7 @@ const AboutUs = ({
   
 
   return (
-    <Fragment>
+    <Fragment style={{height: '100vh'}}>
       <h1 style={{marginTop: '40px'}} className="large">About Us</h1>
       <p className="lead">
         Deface The House is a bettors paradise of knowledge – we give you the resources to take down any sportsbook. A resource for fans, 

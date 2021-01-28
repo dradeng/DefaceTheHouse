@@ -10,7 +10,7 @@ const ComputerModel = ({
   
 
   return (
-    <Fragment>
+    <Fragment style={{height: '100vh'}}>
       <h1 style={{marginTop: '40px'}} className="large">Computer Model</h1>
       <p className="lead">
         Our computer model simulates 1000 game scenarios and takes the average. 

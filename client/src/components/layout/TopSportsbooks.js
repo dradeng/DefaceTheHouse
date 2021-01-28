@@ -10,7 +10,7 @@ const TopSportsbook = ({
   
 
   return (
-    <Fragment>
+    <Fragment style={{height: '100vh'}}>
       <h1 style={{marginTop: '40px'}} className="large">Top Sportsbook</h1>
       <p className="lead">
         Coming Soon!!
