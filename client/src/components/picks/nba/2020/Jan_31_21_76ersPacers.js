@@ -70,9 +70,9 @@ const Jan_31_21_76ersPacers = () => {
     			</div>
     		</div>
     	</div>
-	    <div style={{display: 'inline-block', marginTop: '20px'}}>
+	    <div style={{display: 'inline-block', marginTop: '20px', verticalAlign: 'top'}}>
 	    	<div style={{width: '280px', margin: '0px 20px'}}>
-	  			<div style={{fontSize: '24px', fontWeight: '700', marginBottom: '20px'}}>Spread Consensus 1.5</div>
+	  			<div style={{fontSize: '24px', fontWeight: '700', marginBottom: '20px'}}>Spread Consensus <br /> PHI -1.5</div>
 	  			<PieChart
 	  				style={{height: '200px'}}
 			      data={dataMock}
@@ -90,9 +90,9 @@ const Jan_31_21_76ersPacers = () => {
 			    />
 	  		</div>
 	  	</div>
-	  	<div style={{display: 'inline-block', marginTop: '20px'}}>
+	  	<div style={{display: 'inline-block', marginTop: '20px', verticalAlign: 'top'}}>
 	    	<div style={{width: '280px', margin: '0px 20px'}}>
-	  			<div style={{fontSize: '24px', fontWeight: '700', marginBottom: '20px'}}>ESPN Prediction</div>
+	  			<div style={{fontSize: '24px', fontWeight: '700', marginBottom: '20px'}}>ESPN Prediction <br /> <br /></div>
 	  			<PieChart
 	  				style={{height: '200px'}}
 			      data={dataEspn}
@@ -110,7 +110,7 @@ const Jan_31_21_76ersPacers = () => {
 			    />
 	  		</div>
 	  	</div>
-  		<div style={{marginTop: '20px', display: 'inline-block'}}>
+  		<div style={{marginTop: '20px', display: 'inline-block', verticalAlign: 'top'}}>
   		  <div style={{width: '280px', margin: '0px 20px'}}>
 	  			<div style={{fontSize: '24px', fontWeight: '700', marginBottom: '20px'}}>Total Consensus 225</div>
 	  			<PieChart

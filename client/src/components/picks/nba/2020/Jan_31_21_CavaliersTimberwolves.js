@@ -72,7 +72,7 @@ const Jan_31_21_CavaliersTimberwolves = () => {
     	</div>
 	    <div style={{display: 'inline-block', marginTop: '20px'}}>
 	    	<div style={{width: '280px', margin: '0px 20px'}}>
-	  			<div style={{fontSize: '24px', fontWeight: '700', marginBottom: '20px'}}>Spread Consensus 3</div>
+	  			<div style={{fontSize: '24px', fontWeight: '700', marginBottom: '20px'}}>Spread Consensus  3</div>
 	  			<PieChart
 	  				style={{height: '200px'}}
 			      data={dataMock}
