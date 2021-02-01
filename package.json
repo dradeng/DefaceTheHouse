@@ -32,6 +32,7 @@
     "@babel/core": "^7.12.10",
     "babel-jest": "^26.6.3",
     "concurrently": "^5.3.0",
+    "generate-robotstxt": "^8.0.3",
     "nodemon": "^2.0.6"
   }
 }
