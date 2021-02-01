@@ -14,7 +14,22 @@ const NBAHome = ({  }) => {
         	February 1, 2021: Lakers vs Hawks <br />
         </Link>
         <Link to='/feb_1_21_HornetsHeat' style={{color: 'inherit', fontSize: '20px'}}>
-        	February 1, 2021: Charlotte Hornets vs Miami Heat <br />
+        	February 1, 2021: Hornets vs Heat <br />
+        </Link>
+        <Link to='/feb_1_21_KnicksBulls' style={{color: 'inherit', fontSize: '20px'}}>
+        	February 1, 2021: Knicks vs Bulls <br />
+        </Link>
+        <Link to='/feb_1_21_TrailBlazersBucks' style={{color: 'inherit', fontSize: '20px'}}>
+        	February 1, 2021: Trail Blazers vs Bucks <br />
+        </Link>
+        <Link to='/feb_1_21_KingsPelicans' style={{color: 'inherit', fontSize: '20px'}}>
+        	February 1, 2021: Kings vs Pelicans <br />
+        </Link>
+        <Link to='/feb_1_21_RocketsThunder' style={{color: 'inherit', fontSize: '20px'}}>
+        	February 1, 2021: Rockets vs Thunder <br />
+        </Link>
+        <Link to='/feb_1_21_TimberwolvesCavaliers' style={{color: 'inherit', fontSize: '20px'}}>
+        	February 1, 2021: Timberwolves vs Cavaliers <br />
         </Link>
         <Link to='/jan_31_21_76ersPacers' style={{color: 'inherit', fontSize: '20px'}}>
         	January 31, 2021: 76ers vs Pacers <br />
