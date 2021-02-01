@@ -13,7 +13,7 @@ const NBAHome = ({  }) => {
         <Link to='/feb_1_21_LakersHawks' style={{color: 'inherit', fontSize: '20px'}}>
         	February 1, 2021: Lakers vs Hawks <br />
         </Link>
-        <Link to='/jan_31_21_HornetsHeat' style={{color: 'inherit', fontSize: '20px'}}>
+        <Link to='/feb_1_21_HornetsHeat' style={{color: 'inherit', fontSize: '20px'}}>
         	February 1, 2021: Charlotte Hornets vs Miami Heat <br />
         </Link>
         <Link to='/jan_31_21_76ersPacers' style={{color: 'inherit', fontSize: '20px'}}>
