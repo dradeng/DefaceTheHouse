@@ -14,23 +14,23 @@ import TopSportsbooks from '../layout/TopSportsbooks';
 import SportsbookReviews from '../layout/SportsbookReviews';
 import ComputerModel from '../layout/ComputerModel';
 
-import jan_31_21_76ersPacers from '../picks/nba/2020/Jan_31_21_76ersPacers';
-import jan_31_21_CavaliersTimberwolves from '../picks/nba/2020/Jan_31_21_CavaliersTimberwolves';
-import jan_31_21_ClippersKnicks from '../picks/nba/2020/Jan_31_21_ClippersKnicks';
-import jan_31_21_JazzNuggets from '../picks/nba/2020/Jan_31_21_JazzNuggets';
-import jan_31_21_MagicRaptors from '../picks/nba/2020/Jan_31_21_MagicRaptors';
-import jan_31_21_NetsWizards from '../picks/nba/2020/Jan_31_21_NetsWizards';
+import jan_31_21_76ersPacers from '../picks/nba/2020/jan/Jan_31_21_76ersPacers';
+import jan_31_21_CavaliersTimberwolves from '../picks/nba/2020/jan/Jan_31_21_CavaliersTimberwolves';
+import jan_31_21_ClippersKnicks from '../picks/nba/2020/jan/Jan_31_21_ClippersKnicks';
+import jan_31_21_JazzNuggets from '../picks/nba/2020/jan/Jan_31_21_JazzNuggets';
+import jan_31_21_MagicRaptors from '../picks/nba/2020/jan/Jan_31_21_MagicRaptors';
+import jan_31_21_NetsWizards from '../picks/nba/2020/jan/Jan_31_21_NetsWizards';
 
-import feb_1_21_GrizzliesSpurs from '../picks/nba/2020/feb_1_21_GrizzliesSpurs';
-import feb_1_21_HornetsHeat from '../picks/nba/2020/feb_1_21_HornetsHeat';
-import feb_1_21_KingsPelicans from '../picks/nba/2020/feb_1_21_KingsPelicans';
-import feb_1_21_KnicksBulls from '../picks/nba/2020/feb_1_21_KnicksBulls';
-import feb_1_21_LakersHawks from '../picks/nba/2020/feb_1_21_LakersHawks';
-import feb_1_21_PistonsNuggets from '../picks/nba/2020/feb_1_21_PistonsNuggets';
-import feb_1_21_RocketsThunder from '../picks/nba/2020/feb_1_21_RocketsThunder';
-import feb_1_21_SunsMavericks from '../picks/nba/2020/feb_1_21_SunsMavericks';
-import feb_1_21_TimberwolvesCavaliers from '../picks/nba/2020/feb_1_21_TimberwolvesCavaliers';
-import feb_1_21_TrailBlazersBucks from '../picks/nba/2020/feb_1_21_TrailBlazersBucks';
+import feb_1_21_GrizzliesSpurs from '../picks/nba/2020/feb/Feb_1_21_GrizzliesSpurs';
+import feb_1_21_HornetsHeat from '../picks/nba/2020/feb/Feb_1_21_HornetsHeat';
+import feb_1_21_KingsPelicans from '../picks/nba/2020/feb/Feb_1_21_KingsPelicans';
+import feb_1_21_KnicksBulls from '../picks/nba/2020/feb/Feb_1_21_KnicksBulls';
+import feb_1_21_LakersHawks from '../picks/nba/2020/feb/Feb_1_21_LakersHawks';
+import feb_1_21_PistonsNuggets from '../picks/nba/2020/feb/Feb_1_21_PistonsNuggets';
+import feb_1_21_RocketsThunder from '../picks/nba/2020/feb/Feb_1_21_RocketsThunder';
+import feb_1_21_SunsMavericks from '../picks/nba/2020/feb/Feb_1_21_SunsMavericks';
+import feb_1_21_TimberwolvesCavaliers from '../picks/nba/2020/feb/Feb_1_21_TimberwolvesCavaliers';
+import feb_1_21_TrailBlazersBucks from '../picks/nba/2020/feb/Feb_1_21_TrailBlazersBucks';
 
 
 const Routes = props => {

@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import { PieChart } from 'react-minimal-pie-chart';
-import intertops from '../../../../img/intertops.png';
+import intertops from '../../../../../img/intertops.png';
 
 
 const Jan_31_21_76ersPacers = () => {
