@@ -40,7 +40,7 @@ const Feb_2_21_RaptorsMagic = () => {
 	      	</div>
 	      	<div>Predicted Score</div>
 	      	<div style={{marginTop: '40px', height: '100px'}}>
-	      		<div class='predictedScore' style={{display: 'inline-block', float: 'left', fontWeight: '700'}} >111.3</div>
+	      		<div class='predictedScore' style={{display: 'inline-block', float: 'left', fontWeight: '700'}} >112.3</div>
 	      		<div class='predictedScore' style={{display: 'inline-block', float: 'right', fontWeight: '700'}} >104.3</div>
 	      	</div>
 	      </div>
@@ -56,8 +56,8 @@ const Feb_2_21_RaptorsMagic = () => {
 	      	</div>
 	      	<div>Predicted Score</div>
 	      	<div style={{marginTop: '40px', height: '100px'}}>
-	      		<div class='predictedScore' style={{display: 'inline-block', float: 'left', fontWeight: '700'}} >114.3</div>
-	      		<div class='predictedScore' style={{display: 'inline-block', float: 'right', fontWeight: '700'}} >107.0</div>
+	      		<div class='predictedScore' style={{display: 'inline-block', float: 'left', fontWeight: '700'}} >112.3</div>
+	      		<div class='predictedScore' style={{display: 'inline-block', float: 'right', fontWeight: '700'}} >104.3</div>
 	      	</div>
 	      </div>
 	    <div style={{marginTop: '0px', fontSize: '20px', width: '375px', margin: 'auto'}}>
