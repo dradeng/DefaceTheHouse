@@ -21,16 +21,19 @@ import jan_31_21_JazzNuggets from '../picks/nba/2020/jan/Jan_31_21_JazzNuggets';
 import jan_31_21_MagicRaptors from '../picks/nba/2020/jan/Jan_31_21_MagicRaptors';
 import jan_31_21_NetsWizards from '../picks/nba/2020/jan/Jan_31_21_NetsWizards';
 
-import feb_1_21_GrizzliesSpurs from '../picks/nba/2020/feb/Feb_1_21_GrizzliesSpurs';
 import feb_1_21_HornetsHeat from '../picks/nba/2020/feb/Feb_1_21_HornetsHeat';
 import feb_1_21_KingsPelicans from '../picks/nba/2020/feb/Feb_1_21_KingsPelicans';
 import feb_1_21_KnicksBulls from '../picks/nba/2020/feb/Feb_1_21_KnicksBulls';
-import feb_1_21_LakersHawks from '../picks/nba/2020/feb/Feb_1_21_LakersHawks';
-import feb_1_21_PistonsNuggets from '../picks/nba/2020/feb/Feb_1_21_PistonsNuggets';
+import feb_1_21_LakersHawks from '../picks/nba/2020/feb/Feb_1_21_LakersHawks'
 import feb_1_21_RocketsThunder from '../picks/nba/2020/feb/Feb_1_21_RocketsThunder';
-import feb_1_21_SunsMavericks from '../picks/nba/2020/feb/Feb_1_21_SunsMavericks';
 import feb_1_21_TimberwolvesCavaliers from '../picks/nba/2020/feb/Feb_1_21_TimberwolvesCavaliers';
-import feb_1_21_TrailBlazersBucks from '../picks/nba/2020/feb/Feb_1_21_TrailBlazersBucks';
+
+import feb_2_21_CelticsWarriors from '../picks/nba/2020/feb/Feb_2_21_CelticsWarriors';
+import feb_2_21_ClippersNets from '../picks/nba/2020/feb/Feb_2_21_ClippersNets';
+import feb_2_21_GrizzliesPacers from '../picks/nba/2020/feb/Feb_2_21_GrizzliesPacers';
+import feb_2_21_PistonsJazz from '../picks/nba/2020/feb/Feb_2_21_PistonsJazz';
+import feb_2_21_RaptorsMagic from '../picks/nba/2020/feb/Feb_2_21_RaptorsMagic';
+import feb_2_21_TrailBlazersWizards from '../picks/nba/2020/feb/Feb_2_21_TrailBlazersWizards';
 
 
 const Routes = props => {
@@ -54,16 +57,20 @@ const Routes = props => {
         <Route exact path="/jan_31_21_MagicRaptors" component={jan_31_21_MagicRaptors} />
         <Route exact path="/jan_31_21_NetsWizards" component={jan_31_21_NetsWizards} />
 
-        <Route exact path="/feb_1_21_GrizzliesSpurs" component={feb_1_21_GrizzliesSpurs} />
         <Route exact path="/feb_1_21_HornetsHeat" component={feb_1_21_HornetsHeat} />
         <Route exact path="/feb_1_21_KingsPelicans" component={feb_1_21_KingsPelicans} />
         <Route exact path="/feb_1_21_KnicksBulls" component={feb_1_21_KnicksBulls} />
         <Route exact path="/feb_1_21_LakersHawks" component={feb_1_21_LakersHawks} />
-        <Route exact path="/feb_1_21_PistonsNuggets" component={feb_1_21_PistonsNuggets} />
         <Route exact path="/feb_1_21_RocketsThunder" component={feb_1_21_RocketsThunder} />
-        <Route exact path="/feb_1_21_SunsMavericks" component={feb_1_21_SunsMavericks} />
         <Route exact path="/feb_1_21_TimberwolvesCavaliers" component={feb_1_21_TimberwolvesCavaliers} />
-        <Route exact path="/feb_1_21_TrailBlazersBucks" component={feb_1_21_TrailBlazersBucks} />
+
+        <Route exact path="/feb_2_21_CelticsWarriors" component={feb_2_21_CelticsWarriors} />
+        <Route exact path="/feb_2_21_ClippersNets" component={feb_2_21_ClippersNets} />
+        <Route exact path="/feb_2_21_GrizzliesPacers" component={feb_2_21_GrizzliesPacers} />
+        <Route exact path="/feb_2_21_PistonsJazz" component={feb_2_21_PistonsJazz} />
+        <Route exact path="/feb_2_21_RaptorsMagic" component={feb_2_21_RaptorsMagic} />
+        <Route exact path="/feb_2_21_TrailBlazersWizards" component={feb_2_21_TrailBlazersWizards} />
+
 
         <Route exact path="/" component={SuperBowl}/>
         <Route component={NotFound} />
