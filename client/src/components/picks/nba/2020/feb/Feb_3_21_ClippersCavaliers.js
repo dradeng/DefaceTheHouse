@@ -168,7 +168,7 @@ const Feb_2_21_ClippersCavaliers = () => {
 		    	  <a href="https://link.intertops.eu/c/408817">
 		    	  	<img style={{width: '200px', borderRadius: '8px'}} src={intertops} />
 		    	  	<div style={{marginTop: '6px', fontWeight: '700' , color: 'green'}}>
-	    	  			+235
+	    	  			-110
 	    	  		</div>
 		    	  </a>
 		    	 </div>
