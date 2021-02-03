@@ -35,6 +35,17 @@ import feb_2_21_PistonsJazz from '../picks/nba/2020/feb/Feb_2_21_PistonsJazz';
 import feb_2_21_RaptorsMagic from '../picks/nba/2020/feb/Feb_2_21_RaptorsMagic';
 import feb_2_21_TrailBlazersWizards from '../picks/nba/2020/feb/Feb_2_21_TrailBlazersWizards';
 
+import feb_3_21_76ersHornets from '../picks/nba/2020/feb/Feb_3_21_76ersHornets';
+import feb_3_21_CelticsKings from '../picks/nba/2020/feb/Feb_3_21_CelticsKings';
+import feb_3_21_ClippersCavaliers from '../picks/nba/2020/feb/Feb_3_21_ClippersCavaliers';
+import feb_3_21_KnicksBulls from '../picks/nba/2020/feb/Feb_3_21_KnicksBulls';
+import feb_3_21_MavericksHawks from '../picks/nba/2020/feb/Feb_3_21_MavericksHawks';
+import feb_3_21_PacersBucks from '../picks/nba/2020/feb/Feb_3_21_PacersBucks';
+import feb_3_21_RocketsThunder from '../picks/nba/2020/feb/Feb_3_21_RocketsThunder';
+import feb_3_21_SunsPelicans from '../picks/nba/2020/feb/Feb_3_21_SunsPelicans';
+import feb_3_21_TimberwolvesSpurs from '../picks/nba/2020/feb/Feb_3_21_TimberwolvesSpurs';
+import feb_3_21_WizardsHeat from '../picks/nba/2020/feb/Feb_3_21_WizardsHeat';
+
 
 const Routes = props => {
   return (
@@ -70,6 +81,17 @@ const Routes = props => {
         <Route exact path="/feb_2_21_PistonsJazz" component={feb_2_21_PistonsJazz} />
         <Route exact path="/feb_2_21_RaptorsMagic" component={feb_2_21_RaptorsMagic} />
         <Route exact path="/feb_2_21_TrailBlazersWizards" component={feb_2_21_TrailBlazersWizards} />
+
+        <Route exact path="/feb_3_21_76ersHornets" component={feb_3_21_76ersHornets} />
+        <Route exact path="/feb_3_21_CelticsKings" component={feb_3_21_CelticsKings} />
+        <Route exact path="/feb_3_21_ClippersCavaliers" component={feb_3_21_ClippersCavaliers} />
+        <Route exact path="/feb_3_21_KnicksBulls" component={feb_3_21_KnicksBulls} />
+        <Route exact path="/feb_3_21_MavericksHawks" component={feb_3_21_MavericksHawks} />
+        <Route exact path="/feb_3_21_PacersBucks" component={feb_3_21_PacersBucks} />
+        <Route exact path="/feb_3_21_RocketsThunder" component={feb_3_21_RocketsThunder} />
+        <Route exact path="/feb_3_21_SunsPelicans" component={feb_3_21_SunsPelicans} />
+        <Route exact path="/feb_3_21_TimberwolvesSpurs" component={feb_3_21_TimberwolvesSpurs} />
+        <Route exact path="/feb_3_21_WizardsHeat" component={feb_3_21_WizardsHeat} />
 
 
         <Route exact path="/" component={SuperBowl}/>
