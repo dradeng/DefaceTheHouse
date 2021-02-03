@@ -52,7 +52,7 @@ const Feb_3_21_KnicksBulls = () => {
 	    <div class='mobileMiddleScorePanel' style={{marginTop: '40px'}}>
 	      	<div class='location'>
 	      		<div>February 03, 2021, 8:00 PM ET</div>
-	      		<<div>United Center</div>
+	      		<div>United Center</div>
 	      	</div>
 	      	<div>Predicted Score</div>
 	      	<div style={{marginTop: '40px', height: '100px'}}>
