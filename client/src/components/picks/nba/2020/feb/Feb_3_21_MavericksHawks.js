@@ -75,7 +75,7 @@ const Feb_3_21_MavericksHawks = () => {
     	</div>
 	    <div style={{display: 'inline-block', marginTop: '20px', verticalAlign: 'top'}}>
 	    	<div style={{width: '280px', margin: '0px 20px'}}>
-	  			<div style={{fontSize: '24px', fontWeight: '700', marginBottom: '20px'}}>Spread Consensus <br /> DAL 1.5</div>
+	  			<div style={{fontSize: '24px', fontWeight: '700', marginBottom: '20px'}}>Spread Consensus <br /> DAL -1.5</div>
 	  			<PieChart
 	  				style={{height: '200px'}}
 			      data={dataMock}

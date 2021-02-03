@@ -19,6 +19,19 @@ const NBAHome = ({  }) => {
         <Link to='/feb_3_21_ClippersCavaliers' style={{color: 'inherit', fontSize: '20px'}}>
         	February 3, 2021: Clippers vs Cavaliers <br />
         </Link>
+        <Link to='/feb_3_21_KnicksBulls' style={{color: 'inherit', fontSize: '20px'}}>
+        	February 3, 2021: Knicks vs Bulls <br />
+        </Link>
+        <Link to='/feb_3_21_MavericksHawks' style={{color: 'inherit', fontSize: '20px'}}>
+        	February 3, 2021: Mavericks vs Hawks <br />
+        </Link>
+        <Link to='/feb_3_21_PacersBucks' style={{color: 'inherit', fontSize: '20px'}}>
+        	February 3, 2021: Pacers vs Bucks <br />
+        </Link>
+        <Link to='/feb_3_21_RocketsThunder' style={{color: 'inherit', fontSize: '20px'}}>
+        	February 3, 2021: Rockets vs Thunder <br />
+        </Link>
+
         <Link to='/feb_2_21_ClippersNets' style={{color: 'inherit', fontSize: '20px'}}>
         	February 2, 2021: Clippers vs Nets <br />
         </Link>
