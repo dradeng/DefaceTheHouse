@@ -5,8 +5,8 @@ import intertops from '../../../../../img/intertops.png';
 
 const Feb_4_21_NuggetsLakers = () => {
 
-	var firstColor = 'rgb(11,43,88)';
-	var secondColor = 'rgb(206,71,69)';
+	var firstColor = 'rgb(18,34,61)';
+	var secondColor = 'rgb(79,44,126)';
 
 
 	const dataMock = [
