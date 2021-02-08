@@ -29,7 +29,7 @@ const Feb_8_21_CavaliersSuns = () => {
       </div>
 	  	<div>
 	      <div class='leftScorePanel' style={{display: 'inline-block', verticalAlign: 'top'}}>
-	      	<div style={{fontWeight: '700'}}Cleveland Cavaliers</div>
+	      	<div style={{fontWeight: '700'}}>Cleveland Cavaliers</div>
 	      	<div style={{fontWeight: '700'}}>10-14 (10-14) ATS</div>
 	      </div>
 	      <div class='middleScorePanel' style={{}}>

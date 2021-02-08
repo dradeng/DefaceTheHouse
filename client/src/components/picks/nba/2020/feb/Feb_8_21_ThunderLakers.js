@@ -29,7 +29,7 @@ const Feb_8_21_ThunderLakers = () => {
       </div>
 	  	<div>
 	      <div class='leftScorePanel' style={{display: 'inline-block', verticalAlign: 'top'}}>
-	      	<div style={{fontWeight: '700'}}Oklahoma City Thunder</div>
+	      	<div style={{fontWeight: '700'}}> Oklahoma City Thunder</div>
 	      	<div style={{fontWeight: '700'}}>10-12 (11-10-1) ATS</div>
 	      </div>
 	      <div class='middleScorePanel' style={{}}>
