@@ -29,7 +29,7 @@ const Feb_8_21_RaptorsGrizzlies = () => {
       </div>
 	  	<div>
 	      <div class='leftScorePanel' style={{display: 'inline-block', verticalAlign: 'top'}}>
-	      	<div style={{fontWeight: '700'}}> Toronto Raptors</div>
+	      	<div style={{fontWeight: '700'}}>Toronto Raptors</div>
 	      	<div style={{fontWeight: '700'}}>10-13 (9-14) ATS</div>
 	      </div>
 	      <div class='middleScorePanel' style={{}}>
