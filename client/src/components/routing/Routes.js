@@ -52,6 +52,15 @@ import feb_4_21_TrailBlazers76ers from '../picks/nba/2020/feb/Feb_4_21_TrailBlaz
 import feb_4_21_WarriorsMavericks from '../picks/nba/2020/feb/Feb_4_21_WarriorsMavericks';
 import feb_4_21_RocketsGrizzlies from '../picks/nba/2020/feb/Feb_4_21_RocketsGrizzlies';
 
+import feb_8_21_BucksNuggets from '../picks/nba/2020/feb/Feb_8_21_BucksNuggets';
+import feb_8_21_CavaliersSuns from '../picks/nba/2020/feb/Feb_8_21_CavaliersSuns';
+import feb_8_21_RaptorsGrizzlies from '../picks/nba/2020/feb/Feb_8_21_RaptorsGrizzlies';
+import feb_8_21_RocketsHornets from '../picks/nba/2020/feb/Feb_8_21_RocketsHornets';
+import feb_8_21_ThunderLakers from '../picks/nba/2020/feb/Feb_8_21_ThunderLakers';
+import feb_8_21_TimberwolvesMavericks from '../picks/nba/2020/feb/Feb_8_21_TimberwolvesMavericks';
+import feb_8_21_WarriorsSpurs from '../picks/nba/2020/feb/Feb_8_21_WarriorsSpurs';
+import feb_8_21_WizardsBulls from '../picks/nba/2020/feb/Feb_8_21_WizardsBulls';
+
 
 const Routes = props => {
   return (
@@ -104,6 +113,19 @@ const Routes = props => {
         <Route exact path="/feb_4_21_RocketsGrizzlies" component={feb_4_21_RocketsGrizzlies} />
         <Route exact path="/feb_4_21_TrailBlazers76ers" component={feb_4_21_TrailBlazers76ers} />
         <Route exact path="/feb_4_21_WarriorsMavericks" component={feb_4_21_WarriorsMavericks} />
+
+        <Route exact path="/feb_8_21_CavaliersSuns" component={feb_8_21_CavaliersSuns} />
+        <Route exact path="/feb_8_21_RaptorsGrizzlies" component={feb_8_21_RaptorsGrizzlies} />
+        <Route exact path="/feb_8_21_RocketsHornets" component={feb_8_21_RocketsHornets} />
+        <Route exact path="/feb_8_21_ThunderLakers" component={feb_8_21_ThunderLakers} />
+        <Route exact path="/feb_8_21_TimberwolvesMavericks" component={feb_8_21_TimberwolvesMavericks} />
+        <Route exact path="/feb_8_21_BucksNuggets" component={feb_8_21_BucksNuggets} />
+        <Route exact path="/feb_8_21_WarriorsSpurs" component={feb_8_21_WarriorsSpurs} />
+        <Route exact path="/feb_8_21_WizardsBulls" component={feb_8_21_WizardsBulls} />
+
+
+
+
 
 
 
