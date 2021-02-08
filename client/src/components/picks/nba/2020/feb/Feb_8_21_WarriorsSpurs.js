@@ -27,7 +27,7 @@ const Feb_8_21_WarriorsSpurs = () => {
       <div style={{fontSize: '40px', fontWeight: '700', marginBottom: '40px'}}>
         Golden State Warriors vs San Antonio Spurs
       </div>
-      
+
 	  	<div>
 	      <div class='leftScorePanel' style={{display: 'inline-block', verticalAlign: 'top'}}>
 	      	<div style={{fontWeight: '700'}}>Golden State Warriors</div>
@@ -150,7 +150,7 @@ const Feb_8_21_WarriorsSpurs = () => {
 
 	    	  	<img style={{width: '200px', borderRadius: '8px'}} src={intertops} />
 	    	  	<div style={{marginTop: '6px', fontWeight: '700' , color: 'green'}}>
-	    	  		+125
+	    	  		+105
 	    	  	</div>
 	    	  </a>
 	    	</div>
@@ -189,7 +189,7 @@ const Feb_8_21_WarriorsSpurs = () => {
 	    	  <a href="https://link.intertops.eu/c/408817">
 	    	  	<img style={{width: '200px', borderRadius: '8px'}} src={intertops} />
 	    	  	<div style={{marginTop: '6px', fontWeight: '700' , color: 'green'}}>
-	    	  		-145
+	    	  		-125
 	    	  	</div>
 	    	  </a>
 	    	  

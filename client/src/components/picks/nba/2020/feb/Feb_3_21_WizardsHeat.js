@@ -149,7 +149,7 @@ const Feb_3_21_WizardsHeat = () => {
 
 	    	  	<img style={{width: '200px', borderRadius: '8px'}} src={intertops} />
 	    	  	<div style={{marginTop: '6px', fontWeight: '700' , color: 'green'}}>
-	    	  		+330
+	    	  		+150
 	    	  	</div>
 	    	  </a>
 	    	</div>
@@ -188,7 +188,7 @@ const Feb_3_21_WizardsHeat = () => {
 	    	  <a href="https://link.intertops.eu/c/408817">
 	    	  	<img style={{width: '200px', borderRadius: '8px'}} src={intertops} />
 	    	  	<div style={{marginTop: '6px', fontWeight: '700' , color: 'green'}}>
-	    	  		-420
+	    	  		-170
 	    	  	</div>
 	    	  </a>
 	    	  

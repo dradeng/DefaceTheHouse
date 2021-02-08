@@ -149,7 +149,7 @@ const Feb_8_21_BucksNuggets = () => {
 
 	    	  	<img style={{width: '200px', borderRadius: '8px'}} src={intertops} />
 	    	  	<div style={{marginTop: '6px', fontWeight: '700' , color: 'green'}}>
-	    	  		+125
+	    	  		-170
 	    	  	</div>
 	    	  </a>
 	    	</div>
@@ -188,7 +188,7 @@ const Feb_8_21_BucksNuggets = () => {
 	    	  <a href="https://link.intertops.eu/c/408817">
 	    	  	<img style={{width: '200px', borderRadius: '8px'}} src={intertops} />
 	    	  	<div style={{marginTop: '6px', fontWeight: '700' , color: 'green'}}>
-	    	  		-145
+	    	  		+150
 	    	  	</div>
 	    	  </a>
 	    	  

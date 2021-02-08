@@ -149,7 +149,7 @@ const Feb_8_21_TimberwolvesMavericks = () => {
 
 	    	  	<img style={{width: '200px', borderRadius: '8px'}} src={intertops} />
 	    	  	<div style={{marginTop: '6px', fontWeight: '700' , color: 'green'}}>
-	    	  		+125
+	    	  		+375
 	    	  	</div>
 	    	  </a>
 	    	</div>
@@ -188,7 +188,7 @@ const Feb_8_21_TimberwolvesMavericks = () => {
 	    	  <a href="https://link.intertops.eu/c/408817">
 	    	  	<img style={{width: '200px', borderRadius: '8px'}} src={intertops} />
 	    	  	<div style={{marginTop: '6px', fontWeight: '700' , color: 'green'}}>
-	    	  		-145
+	    	  		-500
 	    	  	</div>
 	    	  </a>
 	    	  

@@ -11,11 +11,11 @@ const Feb_4_21_WarriorsMavericks = () => {
 
 	const dataMock = [
   	{ title: 'GS 59%', value: 47, color: firstColor },
-  	{ title: 'DAL 41%', value: 53, color: secondColor },
+  	{ title: 'SA 41%', value: 53, color: secondColor },
 	];
 	const dataEspn = [
   	{ title: 'GS 28.8%', value: 48.8, color: firstColor },
-  	{ title: 'DAL 71.2%', value: 51.2, color: secondColor },
+  	{ title: 'SA 71.2%', value: 51.2, color: secondColor },
 	];
 	const dataMock2 = [
   	{ title: 'Under 31%', value: 55, color: firstColor },
@@ -149,7 +149,7 @@ const Feb_4_21_WarriorsMavericks = () => {
 
 	    	  	<img style={{width: '200px', borderRadius: '8px'}} src={intertops} />
 	    	  	<div style={{marginTop: '6px', fontWeight: '700' , color: 'green'}}>
-	    	  		+125
+	    	  		+105
 	    	  	</div>
 	    	  </a>
 	    	</div>
@@ -188,7 +188,7 @@ const Feb_4_21_WarriorsMavericks = () => {
 	    	  <a href="https://link.intertops.eu/c/408817">
 	    	  	<img style={{width: '200px', borderRadius: '8px'}} src={intertops} />
 	    	  	<div style={{marginTop: '6px', fontWeight: '700' , color: 'green'}}>
-	    	  		-145
+	    	  		-125
 	    	  	</div>
 	    	  </a>
 	    	  

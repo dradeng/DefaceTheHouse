@@ -28,7 +28,7 @@ const Feb_8_21_WizardsBulls = () => {
         Washington Wizards vs Chicago Bulls
       </div>
 	  	<div>
-	  	
+
 	      <div class='leftScorePanel' style={{display: 'inline-block', verticalAlign: 'top'}}>
 	      	<div style={{fontWeight: '700'}}>  Washington Wizards</div>
 	      	<div style={{fontWeight: '700'}}>5-15 (8-12) ATS</div>
@@ -150,7 +150,7 @@ const Feb_8_21_WizardsBulls = () => {
 
 	    	  	<img style={{width: '200px', borderRadius: '8px'}} src={intertops} />
 	    	  	<div style={{marginTop: '6px', fontWeight: '700' , color: 'green'}}>
-	    	  		+125
+	    	  		-170
 	    	  	</div>
 	    	  </a>
 	    	</div>
@@ -189,7 +189,7 @@ const Feb_8_21_WizardsBulls = () => {
 	    	  <a href="https://link.intertops.eu/c/408817">
 	    	  	<img style={{width: '200px', borderRadius: '8px'}} src={intertops} />
 	    	  	<div style={{marginTop: '6px', fontWeight: '700' , color: 'green'}}>
-	    	  		-145
+	    	  		+150
 	    	  	</div>
 	    	  </a>
 	    	  
