@@ -129,7 +129,7 @@ const Routes = props => {
 
 
 
-        <Route exact path="/" component={SuperBowl}/>
+        <Route exact path="/" component={feb_8_21_CavaliersSuns}/>
         <Route component={NotFound} />
       </Switch>
     </section>
