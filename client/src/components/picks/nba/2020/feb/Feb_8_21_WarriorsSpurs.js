@@ -27,6 +27,7 @@ const Feb_8_21_WarriorsSpurs = () => {
       <div style={{fontSize: '40px', fontWeight: '700', marginBottom: '40px'}}>
         Golden State Warriors vs San Antonio Spurs
       </div>
+      
 	  	<div>
 	      <div class='leftScorePanel' style={{display: 'inline-block', verticalAlign: 'top'}}>
 	      	<div style={{fontWeight: '700'}}>Golden State Warriors</div>
