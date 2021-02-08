@@ -29,7 +29,7 @@ const Feb_8_21_WizardsBulls = () => {
       </div>
 	  	<div>
 	      <div class='leftScorePanel' style={{display: 'inline-block', verticalAlign: 'top'}}>
-	      	<div style={{fontWeight: '700'}}>Washington Wizards</div>
+	      	<div style={{fontWeight: '700'}}>  Washington Wizards</div>
 	      	<div style={{fontWeight: '700'}}>5-15 (8-12) ATS</div>
 	      </div>
 	      <div class='middleScorePanel' style={{}}>
