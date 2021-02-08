@@ -64,11 +64,11 @@ const Feb_8_21_RocketsHornets = () => {
     			Model Record
     		</div>
     		<div style={{height: '100px', paddingTop: '20px', width: '300px', margin: 'auto'}}>
-    			<div class='text' style={{float:'left'}}>
+    			<div class='text'>
     				Spread Record: 14-17-2
     			</div>
-   
-    			<div class='text' style={{float:'right'}}>
+   				<br />
+    			<div class='text'>
     				O/U Record: 22-11
     			</div>
     		</div>
