@@ -61,6 +61,14 @@ import feb_8_21_TimberwolvesMavericks from '../picks/nba/2020/feb/Feb_8_21_Timbe
 import feb_8_21_WarriorsSpurs from '../picks/nba/2020/feb/Feb_8_21_WarriorsSpurs';
 import feb_8_21_WizardsBulls from '../picks/nba/2020/feb/Feb_8_21_WizardsBulls';
 
+import feb_9_21_76ersKings from '../picks/nba/2020/feb/Feb_9_21_76ersKings';
+import feb_9_21_CelticsJazz from '../picks/nba/2020/feb/Feb_9_21_CelticsJazz';
+import feb_9_21_KnicksHeat from '../picks/nba/2020/feb/Feb_9_21_KnicksHeat';
+import feb_9_21_MagicTrailBlazers from '../picks/nba/2020/feb/Feb_9_21_MagicTrailBlazers';
+import feb_9_21_NetsPistons from '../picks/nba/2020/feb/Feb_9_21_NetsPistons';
+import feb_9_21_RocketsPelicans from '../picks/nba/2020/feb/Feb_9_21_RocketsPelicans';
+import feb_9_21_WarriorsSpurs from '../picks/nba/2020/feb/Feb_9_21_WarriorsSpurs';
+
 
 const Routes = props => {
   return (
@@ -123,7 +131,13 @@ const Routes = props => {
         <Route exact path="/feb_8_21_WarriorsSpurs" component={feb_8_21_WarriorsSpurs} />
         <Route exact path="/feb_8_21_WizardsBulls" component={feb_8_21_WizardsBulls} />
 
-
+        <Route exact path="/feb_9_21_76ersKings" component={feb_9_21_76ersKings} />
+        <Route exact path="/feb_9_21_CelticsJazz" component={feb_9_21_CelticsJazz} />
+        <Route exact path="/feb_9_21_KnicksHeat" component={feb_9_21_KnicksHeat} />
+        <Route exact path="/feb_9_21_MagicTrailBlazers" component={feb_9_21_MagicTrailBlazers} />
+        <Route exact path="/feb_9_21_NetsPistons" component={feb_9_21_NetsPistons} />
+        <Route exact path="/feb_9_21_RocketsPelicans" component={feb_9_21_RocketsPelicans} />
+        <Route exact path="/feb_9_21_WarriorsSpurs" component={feb_9_21_WarriorsSpurs} />
 
 
 

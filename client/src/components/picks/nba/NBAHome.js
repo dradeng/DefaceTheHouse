@@ -10,6 +10,27 @@ const NBAHome = ({  }) => {
     <Fragment>
       <h2 className="my-2">NBA Home</h2>
       <table className="table">
+        <Link to='/feb_9_21_76ersKings' style={{color: 'inherit', fontSize: '20px'}}>
+        	February 9, 2021: 76ers  vs Kings <br />
+        </Link>
+        <Link to='/feb_9_21_CelticsJazz' style={{color: 'inherit', fontSize: '20px'}}>
+        	February 9, 2021: Celtics vs Jazz <br />
+        </Link>
+        <Link to='/feb_9_21_KnicksHeat' style={{color: 'inherit', fontSize: '20px'}}>
+        	February 9, 2021: Knicks vs Heat <br />
+        </Link>
+        <Link to='/feb_9_21_MagicTrailBlazers' style={{color: 'inherit', fontSize: '20px'}}>
+        	February 9, 2021: Magic vs TrailBlazers <br />
+        </Link>
+        <Link to='/feb_9_21_NetsPistons' style={{color: 'inherit', fontSize: '20px'}}>
+        	February 9, 2021: Nets vs Pistons <br />
+        </Link>
+        <Link to='/feb_9_21_RocketsPelicans' style={{color: 'inherit', fontSize: '20px'}}>
+        	February 9, 2021: Rockets vs Pelicans <br />
+        </Link>
+        <Link to='/feb_9_21_WarriorsSpurs' style={{color: 'inherit', fontSize: '20px'}}>
+        	February 9, 2021: Warriors vs Spurs  <br />
+        </Link>
         <Link to='/feb_8_21_BucksNuggets' style={{color: 'inherit', fontSize: '20px'}}>
         	February 8, 2021: Bucks vs Nuggets <br />
         </Link>
