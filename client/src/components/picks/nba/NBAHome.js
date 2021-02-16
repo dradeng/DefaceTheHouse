@@ -10,6 +10,19 @@ const NBAHome = ({  }) => {
     <Fragment>
       <h2 className="my-2">NBA Home</h2>
       <table className="table">
+        <Link to='/feb_16_21_LakersTimberwolves' style={{color: 'inherit', fontSize: '20px'}}>
+        	February 16, 2021: Lakers  vs Timberwolves <br />
+        </Link>
+        <Link to='/feb_16_21_NetsSuns' style={{color: 'inherit', fontSize: '20px'}}>
+        	February 16, 2021: Nets  vs Suns <br />
+        </Link>
+        <Link to='/feb_16_21_NuggetsCeltics' style={{color: 'inherit', fontSize: '20px'}}>
+        	February 16, 2021: Nuggets  vs Celtics <br />
+        </Link>
+        <Link to='/feb_16_21_TrailBlazersThunder' style={{color: 'inherit', fontSize: '20px'}}>
+        	February 16, 2021: Trail Blazers  vs Thunder <br />
+        </Link>
+
         <Link to='/feb_9_21_76ersKings' style={{color: 'inherit', fontSize: '20px'}}>
         	February 9, 2021: 76ers  vs Kings <br />
         </Link>
