@@ -1,0 +1,4 @@
+{
+  "mongoURI": "mongodb+srv://databaseUser:password11@cluster0.9fxpc.mongodb.net/DefaceTheHouse?retryWrites=true&w=majority",
+  "jwtSecret": "sl_myJwtSecret"
+}
