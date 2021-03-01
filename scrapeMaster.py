@@ -6,6 +6,7 @@ from bs4 import BeautifulSoup
 ''' Oddsshark SCRAPE SECTION '''
 
 URL = 'https://www.oddsshark.com/nba/charlotte-portland-odds-march-1-2021-1350556'
+espnURL = 'https://www.espn.com/nba/game?gameId=401267695'
 page = requests.get(URL)
 
 soup = BeautifulSoup(page.content, 'html.parser')
@@ -222,8 +223,7 @@ for object in away_trends:
 
 ''' ESPN SCRAPE SECTION '''
 
-URL = 'https://www.espn.com/nba/game?gameId=401267695'
-page = requests.get(URL)
+page = requests.get(espnURL)
 
 soup = BeautifulSoup(page.content, 'html.parser')
 
@@ -243,15 +243,15 @@ for stat in espnStats:
 
 	count = count + 1
 	if count == 4:
-		home_spread = stat.get_text(strip=True)
+		away_spread = stat.get_text(strip=True)
 	elif count == 5:
-		home_moneyline = stat.get_text(strip=True)
+		away_moneyline = stat.get_text(strip=True)
 	elif count == 6:
 		over_under = stat.get_text(strip=True)
 	elif count == 9:
-		away_spread = stat.get_text(strip=True)
+		home_spread = stat.get_text(strip=True)
 	elif count == 10:
-		away_moneyline = stat.get_text(strip=True)
+		home_moneyline = stat.get_text(strip=True)
 
 
 home_predicted_score = float(home_predicted_score)

@@ -175,7 +175,7 @@ const NbaGame = ({ getNbaGame, nbaGame: { nbaGame, loading }, match }) => {
 	  			<div>
 	  				<div style={{fontWeight: '700', padding: '20px', fontSize: '24px'}} >Away Trends</div>
 	  				<div style={{textAlign: 'left',}}>
-		  				{nbaGame.home_trends.map((trend) => (
+		  				{nbaGame.away_trends.map((trend) => (
 				          <div style={{paddingTop: '10px'}}>{trend}sss</div>
 				      ))}
 				    </div>
