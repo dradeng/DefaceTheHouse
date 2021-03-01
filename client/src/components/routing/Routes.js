@@ -32,6 +32,7 @@ const Routes = props => {
         <Route exact path="/computer-model" component={ComputerModel} />
         <Route exact path="/top-sportsbooks" component={TopSportsbooks} />
         <Route exact path="/sportsbook-reviews" component={SportsbookReviews} />
+        <Route exact path="/" component={NbaGames} />
     
         <Route component={NotFound} />
       </Switch>
