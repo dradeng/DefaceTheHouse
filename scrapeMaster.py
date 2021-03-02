@@ -5,8 +5,8 @@ from bs4 import BeautifulSoup
 
 ''' Oddsshark SCRAPE SECTION '''
 
-URL = 'https://www.oddsshark.com/nba/charlotte-portland-odds-march-1-2021-1350556'
-espnURL = 'https://www.espn.com/nba/game?gameId=401267695'
+URL = 'https://www.oddsshark.com/nba/atlanta-miami-odds-march-2-2021-1349366'
+espnURL = 'https://www.espn.com/nba/game?gameId=401267698'
 page = requests.get(URL)
 
 soup = BeautifulSoup(page.content, 'html.parser')
@@ -281,6 +281,9 @@ if not changed:
 	home_predicted_score += .1 
 	away_predicted_score -= .1
 
+	home_predicted_score += 3.5 
+	away_predicted_score += 3.5
+
 
 home_predicted_score = str(home_predicted_score)
 away_predicted_score = str(away_predicted_score)
@@ -351,8 +354,8 @@ mydict = {
 	'home_trends': arr_home_trends,
 	'away_trends': arr_away_trends,
 
-	'model_spread_record': '21-25-2',
-  	'model_over_under_record': '34-14',
+	'model_spread_record': '26-27-2',
+  	'model_over_under_record': '35-20',
     
 
 }

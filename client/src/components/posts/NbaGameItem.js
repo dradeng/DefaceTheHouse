@@ -39,7 +39,7 @@ const NbaGameItem = ({
 
   <div className="bg-white p-1 my-1">
     <div>
-      <div>{home_name} vs {away_name}</div>
+      <div>{date}: {home_name} vs {away_name}</div>
       <div style={{fontWeight: '700', fontSize: '12px'}}>
         <div style={{display: 'inline-block', padding: '0px 10px'}}>Spread: {home_abbreviation} {home_spread}</div>
         <div style={{display: 'inline-block'}}>Over/Under: {over_under}</div>
