@@ -63,6 +63,7 @@ const Navbar = ({ auth: { isAuthenticated }, logout }) => {
           <div style={{display: showSports ? 'inline-block' : 'none', visible: 'auto', fontWeight: '700', backgroundColor: '#F7F6F4', color: '#000000', borderRadius: '15px'}}>
             <Link onClick={() => closeDropdowns()} to="/nfl" style={{ margin: '20px', display: 'block', color: '#000000'}}>NFL</Link>
             <Link onClick={() => closeDropdowns()} to="/ncaaf" style={{ margin: '20px', display: 'block', color: '#000000'}}>NCAAF</Link>
+            <Link onClick={() => closeDropdowns()} to="/ncaab" style={{ margin: '20px', display: 'block', color: '#000000'}}>NCAAB</Link>
             <Link onClick={() => closeDropdowns()} to="/nba" style={{ margin: '20px', display: 'block', color: '#000000'}}>NBA</Link>
             <Link onClick={() => closeDropdowns()} to="/mlb" style={{ margin: '20px', display: 'block', color: '#000000'}}>MLB</Link>
             <Link onClick={() => closeDropdowns()} to="/nhl" style={{ margin: '20px', display: 'block', color: '#000000'}}>NHL</Link>
@@ -76,6 +77,7 @@ const Navbar = ({ auth: { isAuthenticated }, logout }) => {
             <Link onClick={() => closeDropdowns()} to="/nfl" style={{ margin: '20px', display: 'block', color: '#000000'}}>NFL</Link>
             <Link onClick={() => closeDropdowns()} to="/ncaaf" style={{ margin: '20px', display: 'block', color: '#000000'}}>NCAAF</Link>
             <Link onClick={() => closeDropdowns()} to="/nba" style={{ margin: '20px', display: 'block', color: '#000000'}}>NBA</Link>
+            <Link onClick={() => closeDropdowns()} to="/ncaab" style={{ margin: '20px', display: 'block', color: '#000000'}}>NCAAB</Link>
             <Link onClick={() => closeDropdowns()} to="/mlb" style={{ margin: '20px', display: 'block', color: '#000000'}}>MLB</Link>
             <Link onClick={() => closeDropdowns()} to="/nhl" style={{ margin: '20px', display: 'block', color: '#000000'}}>NHL</Link>
           </div>

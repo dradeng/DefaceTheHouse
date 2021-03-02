@@ -15,6 +15,8 @@ import SportsbookReviews from '../layout/SportsbookReviews';
 import ComputerModel from '../layout/ComputerModel';
 import NbaGames from '../posts/NbaGames';
 import NbaGame from '../posts/NbaGame';
+import NcaabGames from '../ncaab/NcaabGames';
+import NcaabGame from '../ncaab/NcaabGame';
 
 
 const Routes = props => {
@@ -28,6 +30,8 @@ const Routes = props => {
         <Route exact path="/nhl" component={NHLHome} />
         <Route exact path="/nba/:id" component={NbaGame} />
         <Route exact path="/nba" component={NbaGames} />
+        <Route exact path="/ncaab/:id" component={NcaabGame} />
+        <Route exact path="/ncaab" component={NcaabGames} />
         <Route exact path="/about-us" component={AboutUs} />
         <Route exact path="/computer-model" component={ComputerModel} />
         <Route exact path="/top-sportsbooks" component={TopSportsbooks} />

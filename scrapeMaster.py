@@ -5,8 +5,8 @@ from bs4 import BeautifulSoup
 
 ''' Oddsshark SCRAPE SECTION '''
 
-URL = 'https://www.oddsshark.com/nba/atlanta-miami-odds-march-2-2021-1349366'
-espnURL = 'https://www.espn.com/nba/game?gameId=401267698'
+URL = 'https://www.oddsshark.com/ncaab/texas-iowa-state-odds-march-2-2021-1383771'
+espnURL = 'https://www.espn.com/mens-college-basketball/game?gameId=401306693'
 page = requests.get(URL)
 
 soup = BeautifulSoup(page.content, 'html.parser')
@@ -281,8 +281,8 @@ if not changed:
 	home_predicted_score += .1 
 	away_predicted_score -= .1
 
-	home_predicted_score += 3.5 
-	away_predicted_score += 3.5
+#home_predicted_score += 3.5 
+#away_predicted_score += 3.5
 
 
 home_predicted_score = str(home_predicted_score)
@@ -293,7 +293,7 @@ away_predicted_score = str(away_predicted_score)
 
 client = pymongo.MongoClient("mongodb://databaseUser:password11@cluster0-shard-00-00.9fxpc.mongodb.net:27017,cluster0-shard-00-01.9fxpc.mongodb.net:27017,cluster0-shard-00-02.9fxpc.mongodb.net:27017/myFirstDatabase?ssl=true&replicaSet=atlas-unth7l-shard-0&authSource=admin&retryWrites=true&w=majority")
 mydb = client["DefaceTheHouse"]
-mycol = mydb["nbagames"]
+mycol = mydb["ncaabgames"]
 mydict = { 
 	"date": date, 
 	"location": location,

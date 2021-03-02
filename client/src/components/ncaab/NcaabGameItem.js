@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 import formatDate from '../../utils/formatDate';
 import { connect } from 'react-redux';
 
-const NbaGameItem = ({
-  nbaGame: {
+const NcaabGameItem = ({
+  ncaabGame: {
     away_abbreviation,
     home_win_percentage,
     over_under,
@@ -46,9 +46,9 @@ const NbaGameItem = ({
   </div>
 );};
 
-NbaGameItem.propTypes = {
-  nbaGame: PropTypes.object.isRequired,
+NcaabGameItem.propTypes = {
+  ncaabGame: PropTypes.object.isRequired,
 };
 
 
-export default NbaGameItem;
+export default NcaabGameItem;

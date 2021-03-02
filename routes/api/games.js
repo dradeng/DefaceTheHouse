@@ -4,6 +4,7 @@ const { check, validationResult } = require('express-validator');
 const auth = require('../../middleware/auth');
 
 const NbaGame = require('../../models/NbaGame');
+const NcaabGame = require('../../models/NcaabGame');
 const User = require('../../models/User');
 const checkObjectId = require('../../middleware/checkObjectId');
 
@@ -73,7 +74,6 @@ router.get('/nba', async (req, res) => {
 // @desc     Get post by ID
 // @access   Private
 router.get('/nba/:id', checkObjectId('id'), async (req, res) => {
-  console.log('we in thtthtt');
   try {
     const nbaGame = await NbaGame.findById(req.params.id);
 
@@ -83,6 +83,41 @@ router.get('/nba/:id', checkObjectId('id'), async (req, res) => {
     console.log('finidng game');
     console.log(nbaGame);
     res.json(nbaGame);
+  } catch (err) {
+    console.error(err.message);
+
+    res.status(500).send('Server Error');
+  }
+});
+
+// @route    GET api/games/ncaab
+// @desc     Get all ncaab games
+// @access   Private
+router.get('/ncaab', async (req, res) => {
+  try {
+    const ncaabGames = await NcaabGame.find().sort({ date: -1 });
+ 
+    res.json(ncaabGames);
+  } catch (err) {
+    console.error(err.message);
+    res.status(500).send('Server Error');
+  }
+});
+
+// @route    GET api/games/nba/:id
+// @desc     Get post by ID
+// @access   Private
+router.get('/ncaab/:id', checkObjectId('id'), async (req, res) => {
+
+  console.log('trying to fin');
+  try {
+    const ncaabGame = await NcaabGame.findById(req.params.id);
+
+    if (!ncaabGame) {
+      return res.status(404).json({ msg: 'NCAAB Game not found' });
+    }
+
+    res.json(ncaabGame);
   } catch (err) {
     console.error(err.message);
 
