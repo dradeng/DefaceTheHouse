@@ -181,6 +181,27 @@ const NcaabGame = ({ getNcaabGame, ncaabGame: { ncaabGame, loading }, match }) =
 	  			</div>
 
 	  		</div>
+	  		<div>
+	  			<div>
+	  				<div style={{fontWeight: '700', padding: '20px', fontSize: '24px'}}>Home Injuries</div>
+	  					<div style={{textAlign: 'left',}}>
+		  					{ncaabGame.home_injuries.map((injury) => (
+				          <div style={{paddingTop: '10px'}}>{injury} </div>
+				        ))}
+				      </div>
+
+	  			</div>
+
+	  			<div>
+	  				<div style={{fontWeight: '700', padding: '20px', fontSize: '24px'}} >Away Injuries</div>
+	  				<div style={{textAlign: 'left',}}>
+		  				{ncaabGame.away_injuries.map((injury) => (
+				          <div style={{paddingTop: '10px'}}>{injury} </div>
+				      ))}
+				    </div>
+	  			</div>
+
+	  		</div>
 		    <div style={{marginTop: '40px'}}>
 		    	<div style={{display: 'inline-block', width: '300px'}}>
 		    	  <div style={{paddingTop: '20px', marginBottom: '20px', fontSize: '24px', fontWeight: '700'}}>Best {ncaabGame.home_abbreviation} Spread ({ncaabGame.best_home_spread_number})</div>

@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-const NbaGameSchema = new Schema({
+const NhlGameSchema = new Schema({
   away_abbreviation: {
     type: String
   },
@@ -88,16 +88,6 @@ const NbaGameSchema = new Schema({
       type: String,
     }
   ],
-  home_injuries: [
-    {
-      type: String,
-    }
-  ],
-  away_injuries: [
-    {
-      type: String,
-    }
-  ],
   best_home_moneyline_link: {
     type: String,
   },
@@ -158,4 +148,4 @@ const NbaGameSchema = new Schema({
   }
 });
 
-module.exports = mongoose.model('nbagame', NbaGameSchema);
+module.exports = mongoose.model('nhlgame', NhlGameSchema);

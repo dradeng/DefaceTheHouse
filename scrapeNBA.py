@@ -5,8 +5,8 @@ from bs4 import BeautifulSoup
 
 ''' Oddsshark SCRAPE SECTION '''
 
-URL = 'https://www.oddsshark.com/ncaab/texas-iowa-state-odds-march-2-2021-1383771'
-espnURL = 'https://www.espn.com/mens-college-basketball/game?gameId=401306693'
+URL = 'https://www.oddsshark.com/nba/san-antonio-dallas-odds-march-10-2021-1384066'
+espnURL = 'https://www.espn.com/nba/game?gameId=401307310'
 page = requests.get(URL)
 
 soup = BeautifulSoup(page.content, 'html.parser')
@@ -74,6 +74,12 @@ away_trends = parsed['oddsshark_gamecenter']['trends']['away'];
 
 arr_home_trends = []
 arr_away_trends = []
+
+home_injuries = parsed['oddsshark_gamecenter']['injuries']['home'];
+away_injuries = parsed['oddsshark_gamecenter']['injuries']['away'];
+
+arr_home_injuries = []
+arr_away_injuries = []
 
 
 #home moneylinee
@@ -219,6 +225,16 @@ for object in away_trends:
 	arr_away_trends.append(object['value'])
 
 
+for object in home_injuries:
+
+	inj = object['name'] + ': ' + object['description']+', ' + object['message']
+	arr_home_injuries.append(inj)
+
+for object in away_injuries:
+	inj = object['name'] + ': ' + object['description']+', ' + object['message']
+	arr_away_injuries.append(inj)
+
+
 
 
 ''' ESPN SCRAPE SECTION '''
@@ -281,8 +297,8 @@ if not changed:
 	home_predicted_score += .1 
 	away_predicted_score -= .1
 
-#home_predicted_score += 3.5 
-#away_predicted_score += 3.5
+home_predicted_score += 2.9 
+away_predicted_score += 2.9
 
 
 home_predicted_score = str(home_predicted_score)
@@ -293,7 +309,7 @@ away_predicted_score = str(away_predicted_score)
 
 client = pymongo.MongoClient("mongodb://databaseUser:password11@cluster0-shard-00-00.9fxpc.mongodb.net:27017,cluster0-shard-00-01.9fxpc.mongodb.net:27017,cluster0-shard-00-02.9fxpc.mongodb.net:27017/myFirstDatabase?ssl=true&replicaSet=atlas-unth7l-shard-0&authSource=admin&retryWrites=true&w=majority")
 mydb = client["DefaceTheHouse"]
-mycol = mydb["ncaabgames"]
+mycol = mydb["nbagames"]
 mydict = { 
 	"date": date, 
 	"location": location,
@@ -353,9 +369,11 @@ mydict = {
 
 	'home_trends': arr_home_trends,
 	'away_trends': arr_away_trends,
+	'home_injuries': arr_home_injuries,
+	'away_injuries': arr_away_injuries,
 
-	'model_spread_record': '26-27-2',
-  	'model_over_under_record': '35-20',
+	'model_spread_record': '39-37-3',
+  	'model_over_under_record': '51-26-2',
     
 
 }

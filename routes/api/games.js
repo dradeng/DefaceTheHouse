@@ -60,8 +60,11 @@ router.post(
 // @desc     Get all nba games
 // @access   Private
 router.get('/nba', async (req, res) => {
+  console.log('test')
   try {
-    const nbaGames = await NbaGame.find().sort({ date: -1 });
+    const nbaGames = await NbaGame.find().sort(
+      { date: -1 }
+    );
  
     res.json(nbaGames);
   } catch (err) {

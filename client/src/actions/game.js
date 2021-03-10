@@ -6,6 +6,8 @@ import {
   GET_NCAAB_GAME,
   GET_NCAAB_GAMES,
   GET_NBA_GAME,
+  GET_NHL_GAME,
+  GET_NHL_GAMES,
 } from './types';
 
 // Get posts

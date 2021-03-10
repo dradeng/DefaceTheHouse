@@ -41,9 +41,6 @@ const NbaGame = ({ getNbaGame, nbaGame: { nbaGame, loading }, match }) => {
 	  	{ title: overVotes, value: nbaGame.over_votes*100, color: nbaGame.away_primary_color },
 		];
 
-		console.log('ff')
-		console.log(nbaGame.best_away_moneyline_image);
-
 	  return (
 	    <Fragment>
 	      <Link to="/nba" className="btn" style={{marginTop: '20px'}}>
@@ -177,6 +174,27 @@ const NbaGame = ({ getNbaGame, nbaGame: { nbaGame, loading }, match }) => {
 	  				<div style={{textAlign: 'left',}}>
 		  				{nbaGame.away_trends.map((trend) => (
 				          <div style={{paddingTop: '10px'}}>{trend}</div>
+				      ))}
+				    </div>
+	  			</div>
+
+	  		</div>
+	  		<div>
+	  			<div>
+	  				<div style={{fontWeight: '700', padding: '20px', fontSize: '24px'}}>Home Injuries</div>
+	  					<div style={{textAlign: 'left',}}>
+		  					{nbaGame.home_injuries.map((injury) => (
+				          <div style={{paddingTop: '10px'}}>{injury} </div>
+				        ))}
+				      </div>
+
+	  			</div>
+
+	  			<div>
+	  				<div style={{fontWeight: '700', padding: '20px', fontSize: '24px'}} >Away Injuries</div>
+	  				<div style={{textAlign: 'left',}}>
+		  				{nbaGame.away_injuries.map((injury) => (
+				          <div style={{paddingTop: '10px'}}>{injury} </div>
 				      ))}
 				    </div>
 	  			</div>

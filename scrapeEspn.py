@@ -4,12 +4,13 @@ from bs4 import BeautifulSoup
 import pymongo
 
 
-URL = 'https://www.espn.com/nba/game?gameId=401267689'
+URL = 'https://www.espn.com/mens-college-basketball/game?gameId=401302750'
 page = requests.get(URL)
 
 soup = BeautifulSoup(page.content, 'html.parser')
 
 print(soup)
+
 
 espnStats = soup.find_all('td', class_='score')
 
@@ -37,20 +38,3 @@ for stat in espnStats:
 	elif count == 10:
 		away_moneyline = stat.get_text(strip=True)
 
-
-client = pymongo.MongoClient("mongodb://databaseUser:password11@cluster0-shard-00-00.9fxpc.mongodb.net:27017,cluster0-shard-00-01.9fxpc.mongodb.net:27017,cluster0-shard-00-02.9fxpc.mongodb.net:27017/myFirstDatabase?ssl=true&replicaSet=atlas-unth7l-shard-0&authSource=admin&retryWrites=true&w=majority")
-mydb = client["DefaceTheHouse"]
-mycol = mydb["NBA"]
-mydict = { 
-	"over_under": over_under, 
-	"home_spread": home_spread,
-	"away_spread": away_spread,
-	"home_moneyline": home_moneyline,
-	"away_moneyline": away_moneyline,
-	"home_win_percentage": home_win_percentage,
-	"away_win_percentage": away_win_percentage,
-}
-
-x = mycol.insert_one(mydict)
-
-print(x.inserted_id)

@@ -142,6 +142,10 @@ const NcaabGameSchema = new Schema({
   best_over_image: {
     type: String,
   },
+  time_created: {
+    type: Date,
+    default: Date.now
+  },
 });
 
 module.exports = mongoose.model('ncaabgame', NcaabGameSchema);

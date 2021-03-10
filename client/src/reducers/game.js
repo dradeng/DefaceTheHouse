@@ -1,6 +1,8 @@
 import {
   GET_NBA_GAMES,
   GET_NBA_GAME,
+  GET_NHL_GAMES,
+  GET_NHL_GAME,
   GET_NCAAB_GAMES,
   GET_NCAAB_GAME,
   GAME_ERROR,
@@ -9,6 +11,8 @@ import {
 const initialState = {
   nbaGames: [],
   nbaGame: null,
+  nhlGames: [],
+  nhlGame: null,
   ncaabGames: [],
   ncaabGame: null,
   loading: true,
@@ -41,6 +45,18 @@ function gameReducer(state = initialState, action) {
       return {
         ...state,
         ncaabGame: payload,
+        loading: false
+      };
+    case GET_NHL_GAMES:
+      return {
+        ...state,
+        nhlGames: payload,
+        loading: false
+      };
+    case GET_NHL_GAME:
+      return {
+        ...state,
+        nhlGame: payload,
         loading: false
       };
     case GAME_ERROR:
