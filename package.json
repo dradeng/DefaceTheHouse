@@ -26,6 +26,7 @@
     "puppeteer": "^7.1.0",
     "react-bootstrap": "^1.4.3",
     "react-ga": "^3.3.0",
+    "react-helmet": "^6.1.0",
     "react-minimal-pie-chart": "^8.1.0",
     "react-select": "^4.0.2"
   },

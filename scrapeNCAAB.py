@@ -5,8 +5,8 @@ from bs4 import BeautifulSoup
 
 ''' Oddsshark SCRAPE SECTION '''
 
-URL = 'https://www.oddsshark.com/ncaab/oral-roberts-north-dakota-state-odds-march-9-2021-1389726'
-espnURL = 'https://www.espn.com/mens-college-basketball/game?gameId=401287755'
+URL = 'https://www.oddsshark.com/ncaab/uc-irvine-uc-santa-barbara-odds-march-13-2021-1395136'
+espnURL = 'https://www.espn.com/mens-college-basketball/game?gameId=401286965'
 page = requests.get(URL)
 
 soup = BeautifulSoup(page.content, 'html.parser')
@@ -34,6 +34,9 @@ over_votes = parsed['oddsshark_gamecenter']['consensus']['over_votes']
 if over_votes == 0:
 	over_votes = 50
 	under_votes = 50
+if home_votes == 0:
+	away_votes = 50
+	home_votes = 50
 
 away_abbreviation = parsed['oddsshark_gamecenter']['matchup']['away_abbreviation']
 away_name = parsed['oddsshark_gamecenter']['matchup']['away_name']
@@ -78,6 +81,13 @@ away_trends = parsed['oddsshark_gamecenter']['trends']['away'];
 
 arr_home_trends = []
 arr_away_trends = []
+
+
+home_injuries = parsed['oddsshark_gamecenter']['injuries']['home'];
+away_injuries = parsed['oddsshark_gamecenter']['injuries']['away'];
+
+arr_home_injuries = []
+arr_away_injuries = []
 
 
 #home moneylinee
@@ -223,6 +233,16 @@ for object in away_trends:
 	arr_away_trends.append(object['value'])
 
 
+for object in home_injuries:
+
+	inj = object['name'] + ': ' + object['description']+', ' + object['message']
+	arr_home_injuries.append(inj)
+
+for object in away_injuries:
+	inj = object['name'] + ': ' + object['description']+', ' + object['message']
+	arr_away_injuries.append(inj)
+
+
 
 
 ''' ESPN SCRAPE SECTION '''
@@ -361,9 +381,11 @@ mydict = {
 
 	'home_trends': arr_home_trends,
 	'away_trends': arr_away_trends,
+	'home_injuries': arr_home_injuries,
+	'away_injuries': arr_away_injuries,
 
-	'model_spread_record': '10-13',
-  	'model_over_under_record': '10-13',
+	'model_spread_record': '58-73',
+  	'model_over_under_record': '69-61-1',
 }
 
 x = mycol.insert_one(mydict)

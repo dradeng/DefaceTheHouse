@@ -2,7 +2,7 @@ import React, { Fragment, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-
+import Helmet from 'react-helmet';
 
 const AboutUs = ({
  
@@ -11,6 +11,9 @@ const AboutUs = ({
 
   return (
     <Fragment style={{height: '100vh'}}>
+      <Helmet>
+            <title>About Us</title>
+      </Helmet>
       <h1 style={{marginTop: '40px'}} className="large">About Us</h1>
       <p className="lead">
         Deface The House is a bettors paradise of knowledge – we give you the resources to take down any sportsbook. A resource for fans, 

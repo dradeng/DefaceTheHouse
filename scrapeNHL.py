@@ -5,8 +5,8 @@ from bs4 import BeautifulSoup
 
 ''' Oddsshark SCRAPE SECTION '''
 
-URL = 'https://www.oddsshark.com/nba/indiana-phoenix-odds-march-13-2021-1384186'
-espnURL = 'https://www.espn.com/nba/game?gameId=401307376'
+URL = 'https://www.oddsshark.com/ncaab/middle-tennessee-north-texas-odds-march-10-2021-1389706'
+espnURL = 'https://www.espn.com/mens-college-basketball/game?gameId=401301264'
 page = requests.get(URL)
 
 soup = BeautifulSoup(page.content, 'html.parser')
@@ -81,6 +81,7 @@ away_trends = parsed['oddsshark_gamecenter']['trends']['away'];
 
 arr_home_trends = []
 arr_away_trends = []
+
 
 home_injuries = parsed['oddsshark_gamecenter']['injuries']['home'];
 away_injuries = parsed['oddsshark_gamecenter']['injuries']['away'];
@@ -282,13 +283,13 @@ away_predicted_score = float(away_predicted_score)
 
 predicted_diff = abs(home_predicted_score - away_predicted_score)
 
-espn_diff = abs((float(home_win_percentage[:-1]) - float(away_win_percentage[:-1]))/5)
+espn_diff = abs((float(home_win_percentage[:-1]) - float(away_win_percentage[:-1]))/6)
 
 changed = False
 
 print(espn_diff)
 print(predicted_diff)
-while (espn_diff > predicted_diff):
+while (espn_diff > predicted_diff+.5):
 	
 	if (float(home_win_percentage[:-1]) >= float(away_win_percentage[:-1])):
 		home_predicted_score += .3
@@ -304,8 +305,12 @@ if not changed:
 	home_predicted_score += .1 
 	away_predicted_score -= .1
 
-home_predicted_score += 2.6 
-away_predicted_score += 2.6
+if (espn_diff > 15):
+	home_predicted_score += 1
+	away_predicted_score -= .5
+
+home_predicted_score -= .5 
+away_predicted_score -= .5
 
 
 home_predicted_score = str(home_predicted_score)
@@ -316,7 +321,7 @@ away_predicted_score = str(away_predicted_score)
 
 client = pymongo.MongoClient("mongodb://databaseUser:password11@cluster0-shard-00-00.9fxpc.mongodb.net:27017,cluster0-shard-00-01.9fxpc.mongodb.net:27017,cluster0-shard-00-02.9fxpc.mongodb.net:27017/myFirstDatabase?ssl=true&replicaSet=atlas-unth7l-shard-0&authSource=admin&retryWrites=true&w=majority")
 mydb = client["DefaceTheHouse"]
-mycol = mydb["nbagames"]
+mycol = mydb["nhlgames"]
 mydict = { 
 	"date": date, 
 	"location": location,
@@ -379,10 +384,8 @@ mydict = {
 	'home_injuries': arr_home_injuries,
 	'away_injuries': arr_away_injuries,
 
-	'model_spread_record': '53-42-4',
-  	'model_over_under_record': '58-39-2',
-    
-
+	'model_spread_record': '0-0',
+  	'model_over_under_record': '0-0',
 }
 
 x = mycol.insert_one(mydict)
