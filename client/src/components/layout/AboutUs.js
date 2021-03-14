@@ -14,7 +14,7 @@ const AboutUs = ({
       <Helmet>
             <title>About Us</title>
       </Helmet>
-      <h1 style={{marginTop: '40px'}} className="large">About Us</h1>
+      <h1 style={{marginTop: '40px'}} className="large">About Us DefaceTheHouse</h1>
       <p className="lead">
         Deface The House is a bettors paradise of knowledge – we give you the resources to take down any sportsbook. A resource for fans, 
         bettors and media outlets looking for wagering information on all the sports and pop culture events you could want.
