@@ -6,6 +6,7 @@ import Spinner from '../layout/Spinner';
 import { getNbaGame } from '../../actions/game';
 import { PieChart } from 'react-minimal-pie-chart';
 import intertops from '../../img/intertops.png';
+import Helmet from 'react-helmet';
 
 const NbaGame = ({ getNbaGame, nbaGame: { nbaGame, loading }, match }) => {
   useEffect(() => {
@@ -43,6 +44,9 @@ const NbaGame = ({ getNbaGame, nbaGame: { nbaGame, loading }, match }) => {
 
 	  return (
 	    <Fragment>
+	    	<Helmet>
+            <title>{nbaGame.home_name} vs {nbaGame.away_name} odds</title>
+     	  </Helmet>
 	      <Link to="/nba" className="btn" style={{marginTop: '20px'}}>
 	        Back To NBA Games
 	      </Link>

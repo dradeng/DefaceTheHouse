@@ -6,6 +6,7 @@ import Spinner from '../layout/Spinner';
 import { getNcaabGame } from '../../actions/game';
 import { PieChart } from 'react-minimal-pie-chart';
 import intertops from '../../img/intertops.png';
+import Helmet from 'react-helmet';
 
 const NcaabGame = ({ getNcaabGame, ncaabGame: { ncaabGame, loading }, match }) => {
   useEffect(() => {
@@ -45,6 +46,9 @@ const NcaabGame = ({ getNcaabGame, ncaabGame: { ncaabGame, loading }, match }) =
 
 	  return (
 	    <Fragment>
+	      <Helmet>
+            <title>{ncaabGame.home_name} vs {ncaabGame.away_name} odds</title>
+     	  </Helmet>
 	      <Link to="/ncaab" className="btn" style={{marginTop: '20px'}}>
 	        Back To NCAAB Games
 	      </Link>
